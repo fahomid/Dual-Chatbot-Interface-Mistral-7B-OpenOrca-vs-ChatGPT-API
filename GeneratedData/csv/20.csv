@@ -1,0 +1,28 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to insert new records into a table with specified values for each column.," To insert new records into a table with specified values for each column, you can use the following SQL query:
+
+```sql
+INSERT INTO table_name (column1, column2, column3,...)
+VALUES (value1, value2, value3,...);
+```
+
+Replace ""table_name"" with the actual table name, and ""column1"", ""column2"", etc. with the actual column names. Replace ""value1"", ""value2"", etc. with the actual values you want to insert into the table.
+
+For example, if you have a table named ""users"" with columns ""id"", ""name"", and ""age"", and you want to insert a new record with the values ""1"", ""John"", and ""25"", the query would look like this:
+
+```sql
+INSERT INTO users (id, name, age)
+VALUES (1, 'John', 25);
+```","Sure! Here is an example SQL query to insert new records into a table with specified values for each column:
+
+```sql
+INSERT INTO table_name (column1, column2, column3)
+VALUES ('value1', 'value2', 'value3');
+```
+
+In this query:
+- `table_name` is the name of the table where you want to insert the new record.
+- `column1`, `column2`, `column3` are the names of the columns in the table where you want to insert the specified values.
+- `'value1'`, `'value2'`, `'value3'` are the specified values that you want to insert into each column.
+
+You can add more columns and values as needed, just make sure the number of columns and values match up correctly."

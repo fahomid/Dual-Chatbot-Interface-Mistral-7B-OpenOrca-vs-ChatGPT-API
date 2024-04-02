@@ -1,0 +1,28 @@
+question,mistral_response,chatgpt_response
+"Give me SQL query to retrieve records that meet conditions across multiple columns using logical operators (AND, OR)."," To retrieve records that meet conditions across multiple columns using logical operators (AND, OR), you can use the following SQL query:
+
+```sql
+SELECT column_names
+FROM table_name
+WHERE (condition1 OR condition2) AND (condition3 OR condition4);
+```
+
+Replace `column_names` with the columns you want to retrieve, and replace `table_name` with the table name you are working with. Then, replace the `condition1`, `condition2`, `condition3`, and `condition4` with the appropriate conditions for each column.
+
+For example, if you want to retrieve records where the `first_name` is ""John"" or ""Mike"" and the `last_name` is ""Doe"" or ""Smith"", your query would look like this:
+
+```sql
+SELECT first_name, last_name
+FROM users
+WHERE (first_name = 'John' OR first_name = 'Mike') AND (last_name = 'Doe' OR last_name = 'Smith');
+```
+
+This query will return records where the first name is either ""John"" or ""Mike"" and the last name is either ""Doe"" or ""Smith"".","Sure, here is an example SQL query to retrieve records that meet conditions across multiple columns using logical operators (AND, OR):
+
+```sql
+SELECT * 
+FROM table_name 
+WHERE column1 = 'value1' AND column2 = 'value2' OR column3 = 'value3';
+```
+
+In this example, the query will retrieve records from the table where column1 is equal to 'value1', column2 is equal to 'value2', or column3 is equal to 'value3'. The logical operators AND and OR are used to specify the conditions that must be met for a record to be retrieved."

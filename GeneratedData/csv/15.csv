@@ -1,0 +1,28 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve a limited number of records using the LIMIT clause.," To retrieve a limited number of records using the LIMIT clause, you can use the following SQL query:
+
+```sql
+SELECT column_names
+FROM table_name
+LIMIT start_index, number_of_records;
+```
+
+Replace ""column_names"" with the columns you want to retrieve, ""table_name"" with the table name, ""start_index"" with the index of the first record you want to retrieve, and ""number_of_records"" with the number of records you want to retrieve.
+
+For example, to retrieve the first 10 records from the ""users"" table, you can use the following query:
+
+```sql
+SELECT *
+FROM users
+LIMIT 0, 10;
+```
+
+In this example, the ""0"" represents the start index (first record), and ""10"" represents the number of records to retrieve.","Sure! Here is an example of an SQL query that retrieves the first 10 records from a table called 'customers':
+
+```
+SELECT * 
+FROM customers
+LIMIT 10;
+``` 
+
+This query will return only the first 10 records from the 'customers' table."

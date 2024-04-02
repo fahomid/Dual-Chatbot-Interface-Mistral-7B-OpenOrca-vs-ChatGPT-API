@@ -1,0 +1,18 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve records where a specific column is less than a certain value.," To retrieve records where a specific column is less than a certain value, you can use the following SQL query:
+
+```sql
+SELECT *
+FROM table_name
+WHERE column_name < value;
+```
+
+Replace ""table_name"" with the name of your table, ""column_name"" with the name of the column you want to compare, and ""value"" with the value you want to compare against.","Sure! Here is an example SQL query to retrieve records where a specific column ""age"" is less than a certain value, let's say 30:
+
+```sql
+SELECT * 
+FROM your_table_name
+WHERE age < 30;
+```
+
+Replace `your_table_name` with the actual name of your table and `age` with the column you want to filter by. This query will return all records where the value in the ""age"" column is less than 30."

@@ -1,0 +1,35 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to update records in a table based on certain conditions.," To update records in a table based on certain conditions, you can use the UPDATE statement in SQL. Here's a general example:
+
+```sql
+UPDATE table_name
+SET column_name = value,
+    another_column = another_value
+WHERE condition;
+```
+
+Replace ""table_name"" with the name of the table you want to update, ""column_name"" with the name of the column you want to update, ""value"" with the new value you want to set for the column, and ""condition"" with the condition you want to apply to the update.
+
+For example, if you want to update the ""age"" column to 30 for all rows where the ""name"" column is equal to ""John"", your SQL query would look like this:
+
+```sql
+UPDATE users
+SET age = 30
+WHERE name = 'John';
+```
+
+Remember to replace ""users"" with the actual table name and ""John"" with the desired name to update.","Sure! Here is an example SQL query to update records in a table based on certain conditions:
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition1 = value1 AND condition2 = value2;
+```
+
+In this query:
+- `UPDATE` is the keyword used to update records in the table.
+- `table_name` is the name of the table where the records will be updated.
+- `SET` is used to specify the columns to be updated and their new values.
+- `WHERE` is used to specify the conditions that the records must meet in order to be updated. Only records that meet the specified conditions will be updated.
+
+You can customize the query by replacing `table_name`, `column1`, `column2`, `value1`, `value2`, `condition1`, `condition2`, etc. with the actual table name, column names, values, and conditions that apply to your specific scenario."

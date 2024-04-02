@@ -1,0 +1,18 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve records where a specific column falls within a range of values.," To retrieve records where a specific column falls within a range of values, you can use the BETWEEN keyword in your SQL query. Here's an example:
+
+```sql
+SELECT *
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+```
+
+Replace ""table_name"" with the name of your table, ""column_name"" with the name of the column you want to filter, and ""value1"" and ""value2"" with the range of values you want to filter by.","Sure! Here is an example SQL query to retrieve records where the ""price"" column falls within a range of values:
+
+```sql
+SELECT * 
+FROM table_name
+WHERE price BETWEEN 100 AND 200;
+``` 
+
+In this query, replace ""table_name"" with the name of your table and ""price"" with the name of the column you want to filter by. The BETWEEN operator is used to specify a range of values. In this case, it will retrieve records where the price is between 100 and 200."

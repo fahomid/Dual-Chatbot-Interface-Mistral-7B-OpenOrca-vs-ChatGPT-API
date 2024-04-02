@@ -1,0 +1,18 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve records where a specific column is greater than a certain value.," To retrieve records where a specific column is greater than a certain value, you can use the following SQL query:
+
+```sql
+SELECT *
+FROM table_name
+WHERE column_name > value;
+```
+
+Replace ""table_name"" with the name of your table, ""column_name"" with the name of the column you want to compare, and ""value"" with the value you want to compare against.","Sure! Here is an example SQL query to retrieve records where a specific column `column_name` is greater than a certain value `value`:
+
+```sql
+SELECT * 
+FROM table_name
+WHERE column_name > value;
+```
+
+Replace `table_name`, `column_name`, and `value` with your actual table name, column name, and value that you want to compare against."
