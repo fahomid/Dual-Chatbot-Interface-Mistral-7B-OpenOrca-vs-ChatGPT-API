@@ -59,7 +59,7 @@ rouge_similarity_chatgpt = []
 counter = 0
 for file in json_files:
     counter+=1
-    with open('/Users/eyosiasdesta/Downloads/compare_/Mistral_VS_ChatGPT/'+file, 'r') as f:
+    with open('/YourDirectoryToJSONFILE/GeneratedJsonFiles/'+file, 'r') as f:
         json_data = json.load(f)
         for i in range(len(json_data['question'])):
             # Get Mistral and ChatGPT responses

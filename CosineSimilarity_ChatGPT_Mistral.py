@@ -23,7 +23,7 @@ json_files = ['1.json', '2.json', '3.json', '4.json', '5.json', '6.json', '7.jso
 data = []
 
 for file in json_files:
-    with open('/Users/eyosiasdesta/Downloads/compare_/Mistral_VS_ChatGPT/'+file, 'r') as f:
+    with open('/YourDirectoryToJSONFILE/GeneratedJsonFiles/'+file, 'r') as f:
         json_data = json.load(f)
         for i in range(len(json_data['question'])):
             data.append({
