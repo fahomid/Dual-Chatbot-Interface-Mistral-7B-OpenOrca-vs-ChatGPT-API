@@ -1,0 +1,22 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve records where a specific column matches a pattern (using LIKE operator).," To retrieve records where a specific column matches a pattern using the LIKE operator, you can use the following SQL query:
+
+```sql
+SELECT column_name
+FROM table_name
+WHERE column_name LIKE '%pattern%';
+```
+
+Replace 'column_name' with the name of the column you want to search, 'table_name' with the name of the table containing the column, and 'pattern' with the pattern you want to match. The '%' symbol is a wildcard that matches any sequence of characters.","Sure! Here is an example SQL query to retrieve records where a specific column (column_name) matches a pattern 'pattern':
+
+```sql
+SELECT * FROM table_name
+WHERE column_name LIKE '%pattern%';
+```
+
+In this query:
+- `table_name` is the name of the table you want to query.
+- `column_name` is the name of the column you want to search for a pattern match.
+- `pattern` is the specific pattern you want to match in the column's values.
+
+The `%` symbols are wildcards that represent zero, one, or multiple characters. So, `%pattern%` means the pattern can occur anywhere in the column's value. You can adjust the `%` symbols to match your specific pattern matching needs."

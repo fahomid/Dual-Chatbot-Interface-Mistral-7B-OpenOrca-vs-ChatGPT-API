@@ -1,0 +1,28 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve records from multiple tables with specified conditions using JOIN and WHERE clauses.," To retrieve records from multiple tables with specified conditions using JOIN and WHERE clauses, you can use the following SQL query:
+
+```sql
+SELECT table1.column1, table1.column2, table2.column3, table3.column4
+FROM table1
+JOIN table2 ON table1.column1 = table2.column2
+JOIN table3 ON table2.column3 = table3.column4
+WHERE table1.column5 = 'value1' AND table2.column6 = 'value2' AND table3.column7 = 'value3';
+```
+
+In this query:
+
+1. `SELECT` specifies the columns you want to retrieve from the tables.
+2. `FROM` specifies the main table (table1) from which the query will start.
+3. `JOIN` is used to connect the tables based on the specified conditions.
+4. `WHERE` is used to apply conditions on the columns of the connected tables.
+
+Replace `table1`, `table2`, and `table3` with the actual table names, and replace `column1`, `column2`, etc. with the actual column names. Also, replace `value1`, `value2`, and `value3` with the actual values you want to filter the records with.","Sure! Here is an example SQL query to retrieve records from two tables (Table1 and Table2) with specified conditions using JOIN and WHERE clauses:
+
+```
+SELECT Table1.column1, Table1.column2, Table2.column1
+FROM Table1
+JOIN Table2 ON Table1.column1 = Table2.column1
+WHERE Table1.condition1 = 'value1' AND Table2.condition2 = 'value2';
+```
+
+In this query, we are selecting columns from Table1 and Table2, joining them on a common column (column1), and applying specified conditions using the WHERE clause. You can modify the column names, table names, and conditions as needed for your specific use case."

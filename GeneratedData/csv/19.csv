@@ -1,0 +1,25 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to delete records from a table based on certain conditions.," To delete records from a table based on certain conditions, you can use the DELETE statement in SQL. Here's a general example:
+
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
+
+Replace ""table_name"" with the actual table name and ""condition"" with the specific conditions you want to apply to delete the records. For example, if you want to delete records where the ""column_name"" has a specific value, your query would look like this:
+
+```sql
+DELETE FROM table_name
+WHERE column_name = value;
+```
+
+Replace ""column_name"" with the actual column name and ""value"" with the specific value you want to match. Make sure to test the query on a development or test environment before applying it to a production database to avoid unintended data loss.","Certainly! Here is an example SQL query to delete records from a table based on certain conditions:
+
+```sql
+DELETE FROM table_name
+WHERE condition_column = 'condition_value';
+```
+
+In this query, replace `table_name` with the name of the table you want to delete records from, `condition_column` with the column name on which you want to apply the condition, and `condition_value` with the value that needs to be matched for the records to be deleted. 
+
+You can also specify multiple conditions using logical operators such as `AND` or `OR` in the `WHERE` clause to delete records based on multiple conditions."

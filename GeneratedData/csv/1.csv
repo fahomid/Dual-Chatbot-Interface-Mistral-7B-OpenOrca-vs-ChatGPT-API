@@ -1,0 +1,17 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve all records from a specific table.," To retrieve records from multiple tables using JOIN operations, you can use the following SQL query:
+
+```sql
+SELECT table1.column1, table1.column2, table2.column3, table3.column4
+FROM table1
+JOIN table2 ON table1.column1 = table2.column2
+JOIN table3 ON table2.column3 = table3.column4;
+```
+
+Replace ""table1"", ""table2"", and ""table3"" with the actual table names, and ""column1"", ""column2"", ""column3"", and ""column4"" with the actual column names in each table. This query will join the records from the three tables based on the specified conditions.","Sure! Here is the SQL query to retrieve all records from a specific table:
+
+```sql
+SELECT * FROM table_name;
+```
+
+Replace `table_name` with the name of the table from which you want to retrieve all records. This query will return all columns and rows from the specified table."

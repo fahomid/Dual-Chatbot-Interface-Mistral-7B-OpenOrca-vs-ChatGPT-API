@@ -1,0 +1,16 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve distinct records from a specific column.," To retrieve distinct records from a specific column in a table, you can use the DISTINCT keyword along with the column name in the SELECT clause. Here's an example:
+
+```sql
+SELECT DISTINCT column_name
+FROM table_name;
+```
+
+Replace ""column_name"" with the name of the column you want to retrieve distinct values from, and ""table_name"" with the name of the table containing the column.","Sure, here is an example SQL query to retrieve distinct records from a specific column:
+
+```sql
+SELECT DISTINCT column_name
+FROM table_name;
+```
+
+In this query, replace `column_name` with the name of the column from which you want to retrieve distinct records, and `table_name` with the name of the table where the column is located. This query will return only unique values from the specified column."

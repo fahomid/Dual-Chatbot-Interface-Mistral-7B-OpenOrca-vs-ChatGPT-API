@@ -1,0 +1,33 @@
+question,mistral_response,chatgpt_response
+"Give me SQL query to retrieve records grouped by a specific column with aggregate functions like COUNT, SUM, AVG, etc."," To retrieve records grouped by a specific column with aggregate functions like COUNT, SUM, AVG, etc., you can use the following SQL query template:
+
+```sql
+SELECT column_name, aggregate_function(column_name)
+FROM table_name
+GROUP BY column_name;
+```
+
+Replace ""column_name"" with the name of the column you want to group by, and ""aggregate_function"" with the desired aggregate function (e.g., COUNT, SUM, AVG, etc.). Replace ""table_name"" with the name of the table containing the data.
+
+For example, if you want to count the number of records grouped by a specific column named ""category"" from a table named ""products"", the query would be:
+
+```sql
+SELECT category, COUNT(*)
+FROM products
+GROUP BY category;
+```
+
+This query will return a result set with the category and the count of records for each category.","Sure! Here is an example SQL query to retrieve records grouped by a specific column with aggregate functions:
+
+```
+SELECT column_name1, COUNT(column_name2) AS count_column_name2, SUM(column_name3) AS sum_column_name3, AVG(column_name4) AS avg_column_name4
+FROM table_name
+GROUP BY column_name1;
+```
+
+In this query:
+- `column_name1` is the column you want to group by.
+- `column_name2` is the column you want to count.
+- `column_name3` is the column you want to sum.
+- `column_name4` is the column you want to calculate the average.
+- `table_name` is the name of the table where the columns are located."

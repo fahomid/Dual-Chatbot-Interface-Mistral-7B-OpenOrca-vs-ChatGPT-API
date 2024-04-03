@@ -1,0 +1,24 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve records from a table based on a subquery.," To retrieve records from a table based on a subquery, you can use the following SQL query:
+
+```sql
+SELECT column_names
+FROM table_name
+WHERE condition = (
+    SELECT subquery_result
+    FROM subquery_table
+    WHERE subquery_condition
+)
+```
+
+Replace ""table_name"" with the actual table name, ""column_names"" with the desired columns, ""condition"" with the comparison operator (e.g., =, <>, >, <, etc.), and ""subquery_table"" and ""subquery_condition"" with the appropriate subquery and conditions.","Sure! Here is an example SQL query to retrieve records from a table based on a subquery:
+
+```sql
+SELECT * 
+FROM employees 
+WHERE department_id IN (SELECT department_id 
+                        FROM departments 
+                        WHERE location = 'New York');
+```
+
+In this query, we are retrieving all records from the `employees` table where the `department_id` matches any `department_id` from the `departments` table that has a `location` value of 'New York'."

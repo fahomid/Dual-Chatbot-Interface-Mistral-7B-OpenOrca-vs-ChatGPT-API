@@ -1,0 +1,30 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve records ordered by a specific column in ascending or descending order.," To retrieve records ordered by a specific column in ascending or descending order, you can use the ORDER BY clause in your SQL query. Here's the general syntax:
+
+```sql
+SELECT column_names
+FROM table_name
+ORDER BY column_name ASC | DESC;
+```
+
+Replace ""column_names"" with the columns you want to retrieve, ""table_name"" with the table you want to query, and ""column_name"" with the column you want to order by. If you want the records ordered in ascending order, use ""ASC""; if you want them ordered in descending order, use ""DESC"".
+
+For example, if you want to retrieve records from the ""users"" table and order them by the ""age"" column in ascending order, your query would look like this:
+
+```sql
+SELECT *
+FROM users
+ORDER BY age ASC;
+```
+
+Replace ""users"" with the actual table name and ""age"" with the actual column name you want to order by.","Sure! Here is an example SQL query to retrieve records from a table called `employees` ordered by the column `salary` in descending order:
+
+```sql
+SELECT * FROM employees ORDER BY salary DESC;
+```
+
+And here is an example SQL query to retrieve records from the same table ordered by the column `hire_date` in ascending order:
+
+```sql
+SELECT * FROM employees ORDER BY hire_date ASC;
+```"

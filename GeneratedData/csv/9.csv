@@ -1,0 +1,18 @@
+question,mistral_response,chatgpt_response
+Give me SQL query to retrieve records where a specific column is NOT NULL.," To retrieve records where a specific column is NOT NULL, you can use the following SQL query:
+
+```sql
+SELECT *
+FROM table_name
+WHERE column_name IS NOT NULL;
+```
+
+Replace ""table_name"" with the actual table name and ""column_name"" with the specific column you want to check for NOT NULL values.","Sure, here is the SQL query to retrieve records where a specific column is not null:
+
+```sql
+SELECT * 
+FROM your_table_name
+WHERE specific_column_name IS NOT NULL;
+```
+
+Replace `your_table_name` with the name of your table and `specific_column_name` with the name of the column you want to check for null values."
